@@ -1,4 +1,4 @@
-# 🎬 CineTrack
+#  CineTrack
 
 A full-stack film and TV series tracking platform built with Node.js, React, and PostgreSQL. Track what you watch, discover new content, write reviews, and explore analytics — all in one place.
 
@@ -6,45 +6,45 @@ A full-stack film and TV series tracking platform built with Node.js, React, and
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🎥 Content
+###  Content
 - Browse films and TV series with poster images fetched from TMDB
 - Filter by genre, content type (film/series), and search by title
 - Detailed pages with synopsis, cast, seasons, awards, budget, revenue, and production info — all powered by TMDB API
 - Watch trailers inline via YouTube embed
 - "You Might Also Like" section using TMDB's recommendation engine
 
-### 📋 Watchlist
+###  Watchlist
 - Add content to your watchlist with four status options: **Plan to Watch**, **Watching**, **Watched**, **Dropped**
 - Track episode progress for series
 - Business rule: episode progress is blocked for films
 
-### ⭐ Reviews
+###  Reviews
 - Rate content from 1 to 10
 - Write text reviews
 - See all community reviews on each title's detail page
 
-### 📊 Analytics Dashboard
+###  Analytics Dashboard
 - Most watched genres (bar chart)
 - Top rated directors (bar chart)
 - Drop rate analysis by genre (bar chart)
 - Monthly review trend with average ratings (line chart)
 - Content completion rate ranking
 
-### 👤 User System
+###  User System
 - Register and login with JWT authentication
 - Follow / unfollow other users
 - Personal dashboard with watchlist overview
 
-### 🌙 UI/UX
+###  UI/UX
 - Dark / Light mode toggle (persisted across sessions)
 - Cinematic backdrop images on detail pages (from TMDB)
 - Responsive design — works on mobile and desktop
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -60,7 +60,7 @@ A full-stack film and TV series tracking platform built with Node.js, React, and
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 cinetrack/
@@ -126,7 +126,7 @@ The PostgreSQL database consists of 14 tables:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -201,7 +201,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 ### Authentication
 | Method | Endpoint | Auth | Description |
@@ -250,7 +250,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🔒 Business Rules
+##  Business Rules
 
 - `episode_progress` is only valid for series — backend returns 400 for films
 - Users cannot follow themselves
@@ -259,7 +259,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 📈 Analytics Highlights
+##  Analytics Highlights
 
 All analytics are powered by raw PostgreSQL via `prisma.$queryRawUnsafe`:
 
@@ -284,7 +284,7 @@ REFRESH MATERIALIZED VIEW mv_top_genres;
 
 ---
 
-## 🌐 Environment Variables
+##  Environment Variables
 
 | Variable | Description |
 |----------|-------------|
@@ -297,13 +297,13 @@ REFRESH MATERIALIZED VIEW mv_top_genres;
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [TMDB](https://www.themoviedb.org/) for the film and series data API
 - [Prisma](https://www.prisma.io/) for the TypeScript ORM
